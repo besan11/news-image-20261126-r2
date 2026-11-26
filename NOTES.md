@@ -72,7 +72,7 @@ Two traps from round 1 kept out again: the Hong Kong Wang Fuk Court
 fire (168 dead) happened 26 Nov **2025** — here only as the one-year
 anniversary; and the Miss Universe crown was won Tue 24 Nov, not 26 Nov.
 
-## Second opinions
+## What the judges said
 
 - **Gemini (gemini-3.1-flash-lite):** asked for an independent trio.
   Its knowledge cutoff is 2024 — it stated plainly it has no information
@@ -94,11 +94,11 @@ anniversary; and the Miss Universe crown was won Tue 24 Nov, not 26 Nov.
   the page is built to be checkable from the image alone: date, counts,
   tags, sources, and the DATE CHECK are all printed on it.
 
-## Rendering
+## How the picture is drawn
 
 - `render.py` — Pillow only, Liberation Serif/Sans from `./fonts` if
   present, else the system font directories, else DejaVu.
 - Output `entry.png`: 1024×1024, under the 1 MiB cap.
-- `main.ts` — Node 22 stdlib only; copies `entry.png` to
-  `$MAKEFUN_OUTPUT_DIR/entry.png` (or `/output`) and verifies PNG magic
-  bytes; both grading runs write identical bytes.
+- `main.ts` — plain Node 22 with no dependencies; it drops `entry.png`
+  into `$MAKEFUN_OUTPUT_DIR/entry.png` (or `/output`) and checks the PNG
+  signature first, so both grading runs produce the same bytes.

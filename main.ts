@@ -7,24 +7,24 @@
 // PNG at $MAKEFUN_OUTPUT_DIR/entry.png (falling back to /output), after
 // confirming the file really is a PNG.
 //
-// Run locally with:
+// To try it yourself:
 //   mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
 
-import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
-import { dirname, join } from "node:path";
-import { fileURLToPath } from "node:url";
+import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { dirname, join } from 'node:path';
+import { fileURLToPath } from 'node:url';
 
 const PNG_MAGIC = [0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a];
 
 const folder = dirname(fileURLToPath(import.meta.url));
-const bytes = readFileSync(join(folder, "entry.png"));
+const bytes = readFileSync(join(folder, 'entry.png'));
 const head = [...bytes.subarray(0, PNG_MAGIC.length)];
-if (head.join(",") !== PNG_MAGIC.join(",")) {
-  throw new Error("entry.png does not start with the PNG signature");
+if (head.join(',') !== PNG_MAGIC.join(',')) {
+  throw new Error('entry.png is not a PNG file');
 }
 
-const outDir = process.env.MAKEFUN_OUTPUT_DIR ?? "/output";
+const outDir = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
 mkdirSync(outDir, { recursive: true });
-const target = join(outDir, "entry.png");
+const target = join(outDir, 'entry.png');
 writeFileSync(target, bytes);
 console.log(`entry.png (${bytes.length} bytes) -> ${target}`);
