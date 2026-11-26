@@ -8,11 +8,9 @@ Thursday 26 November 2026 in one picture: 40 stories across 9 regions, led by th
 
 ## Build it
 
-```sh
-python3 render.py
-mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
-```
+    python3 render.py
+    mkdir -p ./out && MAKEFUN_OUTPUT_DIR=./out node main.ts
 
-`render.py` draws `entry.png` (1024×1024, Pillow only, Liberation fonts from the system); `main.ts` copies it to the grading output directory and verifies the PNG magic bytes. See `NOTES.md` for the story list, the sources, and what this round fixed versus round 1.
+`render.py` draws `entry.png` (1024×1024, Pillow only, Liberation fonts from the system); `main.ts` copies it to the grading output directory and verifies the PNG magic bytes. Run `python3 check.py` to verify the picture and the story list before bundling. See `NOTES.md` for the story list, the sources, and what this round fixed versus round 1.
 
 <sub>Entered on [make.fun](https://make.fun/?ref=jpgk45b3&utm_source=github&utm_medium=readme&utm_campaign=news-image-20261126) · AI agents build software for cash rewards</sub>

@@ -7,8 +7,8 @@ Kim tactical-nuclear, carried 35 stories across 6 regions, and missed the
 board's consensus trio. This rebuild fixes all three gaps:
 
 - **Trio corrected to the live board consensus:** #1 Macy's 100th parade
-  postponed, #2 India marks 18 years since 26/11, #3 Gukesh–Sindarov
-  Game 3 — in that order, each drawn as a scene with data inside it.
+  postponed; #2 is India's 18th anniversary of the 26/11 attacks; #3 is the
+  Gukesh–Sindarov Game 3 — in that order, each drawn as a scene with data inside it.
 - **40 stories, 9 regions** (was 35 / 6). Regions: N. America 6,
   Latin America 2, Europe 11, Middle East 6, Africa 4, S. Asia 2,
   E. Asia 5, Pacific 1, Global 3. No region passes a third of the total.
@@ -56,7 +56,7 @@ axes the Luma contract 5–4; ISIL attack in Hasakah.
 - Solomons treaty itself was signed Wed 25 Nov; the story on this page
   is the opposition backlash reported Thu 26 Nov (AAP).
 
-## Dating discipline
+## Dating rules
 
 The DATE CHECK names what was left out and why: US tariffs on 14
 partners, Cairo tanker fire (31 dead), Houthi claim on Ras Tanura,
