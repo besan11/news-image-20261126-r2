@@ -1,5 +1,5 @@
 # One-day newspaper front page for Thursday 26 November 2026.
-#
+# ---
 # Draws entry.png (1024x1024) with Pillow from the story list below.
 # No network, no fetched data: every fact was checked live against wire
 # reporting before this file was written, and the sources are named in
@@ -30,15 +30,13 @@ REGION_COLORS = {
     "S. ASIA": (194, 24, 91),
     "E. ASIA": (46, 125, 50),
     "PACIFIC": (0, 131, 143),
-    "GLOBAL": (97, 97, 97),
-}
+    "GLOBAL": (97, 97, 97), }
 
 STATUS_COLORS = {
     "CONFIRMED": (46, 125, 50),
     "OFFICIAL": (31, 111, 178),
     "REPORTED": (176, 124, 0),
-    "CLAIM": (179, 32, 44),
-}
+    "CLAIM": (179, 32, 44), }
 
 
 def find_font(bold, serif):
@@ -135,8 +133,7 @@ TRIO = [
     (3, "GLOBAL", "Gukesh-Sindarov Game 3: draw",
      "A 60-move thriller in Geneva ends level, 1.5-1.5. Gukesh springs "
      "the Rio Variation.",
-     "Chess.com", "CONFIRMED"),
-]
+     "Chess.com", "CONFIRMED"), ]
 
 MIDS = [
     (4, "N. AMERICA", "Nor'easter cuts 500,000+ off",
@@ -168,8 +165,7 @@ MIDS = [
      "Times / Telegraph", "OFFICIAL"),
     (13, "EUROPE", "London Tube strike bites",
      "Commuters stranded as Tube staff walk out.",
-     "TfL", "CONFIRMED"),
-]
+     "TfL", "CONFIRMED"), ]
 
 ALSO = [
     (14, "M. EAST", "Kuwait drone strike kills 2 Italians", "Reuters", "REPORTED"),
@@ -198,8 +194,7 @@ ALSO = [
     (37, "N. AMERICA", "Thanksgiving travel: 1,500+ delays", "FlightAware", "CONFIRMED"),
     (38, "PACIFIC", "Solomons opposition slams Australia pact", "AAP", "REPORTED"),
     (39, "LATIN AM.", "Puerto Rico axes Luma contract, 5-4", "San Juan", "OFFICIAL"),
-    (40, "M. EAST", "ISIL attack in Hasakah", "Wires", "REPORTED"),
-]
+    (40, "M. EAST", "ISIL attack in Hasakah", "Wires", "REPORTED"), ]
 
 STATS = [
     ("100th", "Macy's parade,\nfirst postponement"),
@@ -207,8 +202,7 @@ STATS = [
     ("60", "moves in Gukesh\nGame 3, a draw"),
     ("500,000+", "without power in\nthe nor'easter"),
     ("5", "jets Kyiv claims\nhit at Savasleyka"),
-    ("€45bn", "EU loan for Ukraine\nfor 2027"),
-]
+    ("€45bn", "EU loan for Ukraine\nfor 2027"), ]
 
 REGIONS = [("N. AMERICA", 6), ("LATIN AM.", 2), ("EUROPE", 11),
            ("M. EAST", 6), ("AFRICA", 4), ("S. ASIA", 2),
@@ -219,8 +213,7 @@ TIMELINE = [
     ("07:16", "Mumbai on high alert for the 26/11 anniversary"),
     ("14:00", "Gukesh-Sindarov Game 3 begins in Geneva"),
     ("14:36", "508,719 customers out, PowerOutage.us count"),
-    ("15:00", "NWS high-wind warning begins in New York"),
-]
+    ("15:00", "NWS high-wind warning begins in New York"), ]
 
 # ---------------------------------------------------------------- drawing
 
@@ -478,8 +471,7 @@ def draw_bottom(draw):
         "Not yet: Spain votes Sun 29 Nov; EU budget deal aimed for 17-18 Dec; "
         "rescheduled Macy's parade Sat 28 Nov 08:30 ET; Gukesh Game 4 Sat 28 Nov.",
         "Why Macy's leads: the postponement was decided Wed night, but the "
-        "parade it cancelled was TODAY, and the storm hit today.",
-    ]
+        "parade it cancelled was TODAY, and the storm hit today.", ]
     yy = y0 + 28
     for line in lines:
         yy = draw_wrapped(draw, dx + 8, yy, line, 8.5, W - 16 - dx - 16,
