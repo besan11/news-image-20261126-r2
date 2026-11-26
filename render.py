@@ -145,7 +145,7 @@ MIDS = [
     (5, "EUROPE", "Savasleyka: 5 jets hit",
      "Three MiG-31s, two Su-34s hit, Kyiv says. Moscow silent.",
      "Ukraine Gen. Staff", "REPORTED"),
-    (6, "EUROPE", "EU summit: E45bn + E1.58tn",
+    (6, "EUROPE", "EU summit: €45bn + €1.58tn plan",
      "27 leaders in Brussels split on Ukraine cash, 2028-34 plan.",
      "Reuters", "OFFICIAL"),
     (7, "E. ASIA", "Kim widens tactical nukes",
@@ -207,7 +207,7 @@ STATS = [
     ("60", "moves in Gukesh\nGame 3, a draw"),
     ("500,000+", "without power in\nthe nor'easter"),
     ("5", "jets Kyiv claims\nhit at Savasleyka"),
-    ("E45bn", "EU loan for Ukraine\nin 2027"),
+    ("€45bn", "EU loan for Ukraine\nfor 2027"),
 ]
 
 REGIONS = [("N. AMERICA", 6), ("LATIN AM.", 2), ("EUROPE", 11),
